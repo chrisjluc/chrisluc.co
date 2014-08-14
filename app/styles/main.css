@@ -73,47 +73,16 @@ body {
     width: 92%;
     position: relative;
 }
+
+.row div {
+    background-color: #aaa;
+}
 #main-logo {
     float: left;
     cursor: pointer;
     margin: 20px 0 0 6px;
     color: #0846B9;
     }
-
-/*
-*Grid
-*/
-
-[class*='col-'] {
-  float: left;
-}
-.col-1-2 {
-  width: 50%
-}
-.col-1-4 {
-  width: 25%;
-}
-.col-1-8 {
-  width: 12.5%;
-}
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-[class*='col-'] {
-  padding-right: 20px;
-}
-[class*='col-']:last-of-type {
-  padding-right: 0;
-  float:right;
-}
-
 
 .hero-unit {
     font-size: 18px;
@@ -130,6 +99,17 @@ body {
     width: 92%;
     position: relative;
 }
+
+.container-nav{
+    min-width: 300px !important;
+    display: table;
+    table-layout: fixed;
+}
+
+.container-nav div {
+    display: inline;
+}
+
 .hero-unit h1 {
     font-size: 60px;
     line-height: 1;
