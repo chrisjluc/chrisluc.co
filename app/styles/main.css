@@ -51,7 +51,70 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
+/** NAVIGATION **/
+@media(min-width:1000px) {
+    .navbar-fixed-top {
+        padding: 15px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
 
+    .navbar-fixed-top .navbar-brand{
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand{
+        font-size: 1.5em;
+    }
+    .social{
+        font-size: 1.5em;
+    }
+}
+@media(min-width:480px) {
+        .social{
+            margin-left: -15px !important;
+        }
+}
+.social{
+    margin-left: -30px;
+    padding: 15px;
+    float: left;
+    line-height: 21px;
+    height: 60px
+    text-transform: uppercase;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+/** OTHER CSS*/
 .header-wrapper {
     position: fixed; top: 0; left: 0; width: 100%; 
     background:url(../images/white-fade.png) repeat;
@@ -77,6 +140,7 @@ body {
 .row div {
     background-color: #aaa;
 }
+
 #main-logo {
     float: left;
     cursor: pointer;
