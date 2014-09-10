@@ -83,6 +83,7 @@ body {
             margin-left: -15px !important;
         }
 }
+
 .social{
     margin-left: -30px;
     padding: 15px;
@@ -138,16 +139,55 @@ body {
     position: relative;
 }
 
-.row div {
-    /**background-color: #aaa;**/
-}
-
 .aboutItem {
     display: block;
     right: 0;
     position: relative;
     margin-bottom: 20px
 }
+
+.projectItem {
+    display: block;
+    right: 0;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.projectItem div {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.projectItem img {
+    height: 190px;
+    margin: 10px;
+}
+
+.projectItem .description {
+    text-align: left;
+}
+
+@media(min-width:768px) {
+    .projectItem img {
+        height: 250px;
+        margin: 10px;
+    }
+}
+
+@media(min-width:924px) {
+    .projectItem img {
+        height: 350px;
+        margin: 10px;
+    }
+}
+.projectTitle p {
+    height: 100%;
+}
+
 .profileImage {
     border-radius: 80px;
     margin: auto;
@@ -198,4 +238,13 @@ body {
     font-size: 60px;
     line-height: 1;
     letter-spacing: -1px;
+}
+
+.footer {
+    padding: 15px;
+    background-color: #eee;
+}
+
+.copyright {
+    text-align: center
 }
