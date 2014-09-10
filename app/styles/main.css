@@ -52,6 +52,22 @@ body {
     color: #333;
 }
 /** NAVIGATION **/
+
+.social{
+    margin-left: -30px;
+    padding: 18px 10px;
+    float: left;
+    line-height: 21px;
+    height: 60px
+}
+
+
+@media(min-width:480px) {
+        .social{
+            margin-left: -15px;
+        }
+}
+
 @media(min-width:1000px) {
     .navbar-fixed-top {
         padding: 15px 0;
@@ -75,22 +91,8 @@ body {
         font-size: 1.5em;
     }
     .social{
-        font-size: 1.5em;
+        padding: 13px;
     }
-}
-@media(min-width:480px) {
-        .social{
-            margin-left: -15px !important;
-        }
-}
-
-.social{
-    margin-left: -30px;
-    padding: 15px;
-    float: left;
-    line-height: 21px;
-    height: 60px
-    text-transform: uppercase;
 }
 
 .navbar {
@@ -115,6 +117,14 @@ body {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+.navbar-toggle {
+    margin-top: 13px;
+}
+
+.nav {
+    margin-top: 10px;
 }
 /** OTHER CSS*/
 .header-wrapper {
@@ -227,10 +237,17 @@ body {
 
 .hero-unit {
     font-weight: 200;
+    margin-top: -10px;
     line-height: 30px;
     /*background-color: #eee;*/
     border-radius: 6px;
     /*padding: 60px;*/
+}
+
+@media(min-width:1000px) {
+    .hero-unit {
+        margin-top: 15px;
+    }
 }
 
 .container-fluid {
@@ -263,4 +280,85 @@ body {
 
 .copyright {
     text-align: center
+}
+
+.github {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/social/github_sm.png);
+}
+
+.github:hover{
+    background-image: url(../images/social/github_sm_hover.png);
+}
+
+.linkedin {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/social/linkedin_sm.png);
+}
+
+.linkedin:hover{
+    background-image: url(../images/social/linkedin_sm_hover.png);
+}
+
+.twitter {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/social/twitter_sm.png);
+}
+
+.twitter:hover{
+    background-image: url(../images/social/twitter_sm_hover.png);
+}
+
+.instagram {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/social/instagram_sm.png);
+}
+
+.instagram:hover{
+    background-image: url(../images/social/instagram_sm_hover.png);
+}
+
+@media(min-width:1000px) {
+    .github {
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/social/github.png);
+    }
+
+    .github:hover{
+        background-image: url(../images/social/github_hover.png);
+    }
+
+    .linkedin {
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/social/linkedin.png);
+    }
+
+    .linkedin:hover{
+    background-image: url(../images/social/linkedin_hover.png);
+    }
+
+    .twitter {
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/social/twitter.png);
+    }
+
+    .twitter:hover{
+        background-image: url(../images/social/twitter_hover.png);
+    }
+    .instagram {
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/social/instagram.png);
+    }
+
+    .instagram:hover{
+        background-image: url(../images/social/instagram_hover.png);
+    }
 }
