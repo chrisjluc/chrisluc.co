@@ -5,6 +5,5 @@ angular.module('website1App')
     $scope.routes = [
       'about'
       'projects'
-      'blog'
       'resume'
     ]
