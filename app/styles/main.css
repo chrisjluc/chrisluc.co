@@ -162,18 +162,29 @@ body {
     text-align: center;
 }
 
+.projectItem .description {
+    text-align: left;
+}
+
 .projectItem img {
     height: 190px;
     margin: 10px;
 }
 
-.projectItem .description {
-    text-align: left;
+.tdlImages img {
+    height: 300px;
+    margin: 10px;
 }
 
 @media(min-width:768px) {
+
     .projectItem img {
         height: 250px;
+        margin: 10px;
+    }
+
+    .tdlImages img {
+        height: 400px;
         margin: 10px;
     }
 }
@@ -181,6 +192,11 @@ body {
 @media(min-width:924px) {
     .projectItem img {
         height: 350px;
+        margin: 10px;
+    }
+
+    .tdlImages img {
+        height: 500px;
         margin: 10px;
     }
 }
