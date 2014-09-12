@@ -53,19 +53,10 @@ body {
 }
 /** NAVIGATION **/
 
-.social{
-    margin-left: -30px;
-    padding: 18px 10px;
-    float: left;
-    line-height: 21px;
-    height: 60px
-}
 
-
-@media(min-width:480px) {
-        .social{
-            margin-left: -15px;
-        }
+.navbar-brand {
+    color: #5347FC !important;
+    padding: 25px 30px;
 }
 
 @media(min-width:1000px) {
@@ -90,16 +81,18 @@ body {
     .navbar-fixed-top.navbar-shrink .navbar-brand{
         font-size: 1.5em;
     }
-    .social{
-        padding: 13px;
-    }
 }
 
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    opacity: 0.9;
+    opacity: 1;
+    background:url(../images/white-fade.png) repeat;
+    -moz-transition: opacity 0.2s ease-out, visibility 0s 0.2s;
+    -webkit-transition: opacity 0.2s ease-out, visibility 0s 0.2s;
+    -o-transition: opacity 0.2s ease-out, visibility 0s 0.2s;
+    transition: opacity 0.2s ease-out, visibility 0s 0.2s;
 }
 
 .navbar a:focus {
@@ -127,18 +120,6 @@ body {
     margin-top: 10px;
 }
 /** OTHER CSS*/
-.header-wrapper {
-    position: fixed; top: 0; left: 0; width: 100%; 
-    background:url(../images/white-fade.png) repeat;
-    padding: 0px;
-    z-index: 220;
-    clear: both; 
-    -moz-transition: opacity 0.2s ease-out, visibility 0s 0.2s;
-    -webkit-transition: opacity 0.2s ease-out, visibility 0s 0.2s;
-    -o-transition: opacity 0.2s ease-out, visibility 0s 0.2s;
-    transition: opacity 0.2s ease-out, visibility 0s 0.2s;
-    height:74px;
-}
 
 .header {
     max-width: 1360px;
@@ -177,7 +158,7 @@ body {
 }
 
 .projectItem img {
-    height: 190px;
+    height: 180px;
     margin: 10px;
 }
 
@@ -215,7 +196,8 @@ body {
 }
 
 .profileImage {
-    border-radius: 80px;
+    width: 150px;
+    border-radius: 100px;
     margin: auto;
     display: block;
 }
@@ -228,6 +210,37 @@ body {
     border-radius: 6px;
 }
 
+.about p {
+    text-indent: 20px;
+    padding: 5px 10px 0px 10px;
+}
+
+.innerItem h3 {
+    margin-bottom: 10px;
+}
+
+.interests {
+    font-size: 12px;
+}
+
+.interests p{
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.technical {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.technical p{
+    text-indent: 20px;
+}
+
+.technical h4{
+    margin: 10px 0px;
+}
+
 #main-logo {
     float: left;
     cursor: pointer;
@@ -236,12 +249,9 @@ body {
     }
 
 .hero-unit {
-    font-weight: 200;
     margin-top: -10px;
     line-height: 30px;
-    /*background-color: #eee;*/
     border-radius: 6px;
-    /*padding: 60px;*/
 }
 
 @media(min-width:1000px) {
@@ -280,85 +290,4 @@ body {
 
 .copyright {
     text-align: center
-}
-
-.github {
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/social/github_sm.png);
-}
-
-.github:hover{
-    background-image: url(../images/social/github_sm_hover.png);
-}
-
-.linkedin {
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/social/linkedin_sm.png);
-}
-
-.linkedin:hover{
-    background-image: url(../images/social/linkedin_sm_hover.png);
-}
-
-.twitter {
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/social/twitter_sm.png);
-}
-
-.twitter:hover{
-    background-image: url(../images/social/twitter_sm_hover.png);
-}
-
-.instagram {
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/social/instagram_sm.png);
-}
-
-.instagram:hover{
-    background-image: url(../images/social/instagram_sm_hover.png);
-}
-
-@media(min-width:1000px) {
-    .github {
-        width: 40px;
-        height: 40px;
-        background-image: url(../images/social/github.png);
-    }
-
-    .github:hover{
-        background-image: url(../images/social/github_hover.png);
-    }
-
-    .linkedin {
-        width: 40px;
-        height: 40px;
-        background-image: url(../images/social/linkedin.png);
-    }
-
-    .linkedin:hover{
-    background-image: url(../images/social/linkedin_hover.png);
-    }
-
-    .twitter {
-        width: 40px;
-        height: 40px;
-        background-image: url(../images/social/twitter.png);
-    }
-
-    .twitter:hover{
-        background-image: url(../images/social/twitter_hover.png);
-    }
-    .instagram {
-        width: 40px;
-        height: 40px;
-        background-image: url(../images/social/instagram.png);
-    }
-
-    .instagram:hover{
-        background-image: url(../images/social/instagram_hover.png);
-    }
 }
