@@ -154,7 +154,6 @@ body {
     margin: 0 auto;
     margin-bottom: 20px;
     background-color: #eee;
-    border-radius: 6px;
     padding: 20px;
 }
 
@@ -167,14 +166,48 @@ body {
     text-align: left;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.description p{
+    text-indent: 20px;
+}
+
 .projectItem img {
     height: 180px;
     margin: 10px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+.projectItem img:hover{
+    height: 185px;
 }
 
 .tdlImages img {
     height: 300px;
     margin: 10px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+.tdlImages img:hover{
+    height: 305px;
 }
 
 @media(min-width:768px) {
@@ -184,9 +217,17 @@ body {
         margin: 10px;
     }
 
+    .projectItem img:hover{
+        height: 255px;
+    }
+
     .tdlImages img {
         height: 400px;
         margin: 10px;
+    }
+
+    .tdlImages img:hover{
+        height: 405px;
     }
 }
 
@@ -196,9 +237,17 @@ body {
         margin: 10px;
     }
 
+    .projectItem img:hover{
+        height: 355px;
+    }
+
     .tdlImages img {
         height: 500px;
         margin: 10px;
+    }
+
+    .tdlImages img:hover{
+        height: 505px;
     }
 }
 .projectTitle p {
@@ -217,7 +266,6 @@ body {
     background-color: #eee;
     width: 100%;
     padding: 20px;
-    border-radius: 6px;
 }
 
 .about p {
