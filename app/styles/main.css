@@ -59,7 +59,12 @@ body {
     padding: 25px 30px;
 }
 
-.page-scroll {
+.navbar-brand {
+    -webkit-transition: all .3s;
+    transition: all .3s;  
+}
+
+.page-scroll>a {
     -webkit-transition: all .3s;
     transition: all .3s;
 }
