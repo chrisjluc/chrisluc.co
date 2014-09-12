@@ -182,10 +182,6 @@ a:active {
     text-decoration: none;
 }
 
-.description p{
-    text-indent: 20px;
-}
-
 .projectItem img {
     height: 180px;
     margin: 10px;
@@ -269,8 +265,7 @@ a:active {
 }
 
 .about p {
-    text-indent: 20px;
-    padding: 5px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 .innerItem h3 {
@@ -289,10 +284,6 @@ a:active {
 .technical {
     font-size: 12px;
     line-height: 20px;
-}
-
-.technical p {
-    text-indent: 20px;
 }
 
 .technical h4{
@@ -316,7 +307,7 @@ a:active {
 
 .hero-unit {
     margin-top: -10px;
-    line-height: 30px;
+    line-height: 25px;
     border-radius: 6px;
 }
 
