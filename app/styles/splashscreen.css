@@ -1,0 +1,45 @@
+body, h1 {
+	color: white !important;
+}
+.navbar {
+	background: none;
+}
+
+.page-scroll a {
+	color: white !important;
+}
+
+h1 {
+	padding: 40vh 0 40vh 0;
+	font-size: 50px
+}
+
+.container-main {
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+
+.background {
+    background: url('../images/background2.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+	-moz-transition: opacity 0.2s ease-out, visibility 0s 0.2s;
+    -webkit-transition: opacity 0.2s ease-out, visibility 0s 0.2s;
+    -o-transition: opacity 0.2s ease-out, visibility 0s 0.2s;
+    transition: opacity 0.2s ease-out, visibility 0s 0.2s;
+}
+
+.main-footer{
+    bottom: 1.5vh;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}

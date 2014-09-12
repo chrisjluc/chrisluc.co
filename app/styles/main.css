@@ -59,6 +59,11 @@ body {
     padding: 25px 30px;
 }
 
+.page-scroll {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
 @media(min-width:1000px) {
     .navbar-fixed-top {
         padding: 15px 0;
@@ -223,7 +228,7 @@ body {
     font-size: 12px;
 }
 
-.interests p{
+.interests p {
     margin-top: 10px;
     line-height: 20px;
 }
@@ -233,12 +238,20 @@ body {
     line-height: 20px;
 }
 
-.technical p{
+.technical p {
     text-indent: 20px;
 }
 
 .technical h4{
     margin: 10px 0px;
+}
+
+.projectItem h4 {
+    margin-bottom: 10px;
+}
+
+.projectItem p {
+    margin: 10px 0;
 }
 
 #main-logo {
