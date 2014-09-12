@@ -9,11 +9,13 @@ body, h1 {
 	color: white !important;
 }
 
-h1 {
-	padding: 40vh 0 40vh 0;
-	font-size: 50px
+.main {
+	padding: 45vh 0 45vh 0;
 }
 
+.main h1 {
+    font-size: 50px
+}
 .container-main {
     position: fixed;
     height: 100%;
@@ -22,7 +24,7 @@ h1 {
 }
 
 .background {
-    background: url('../images/background2.jpg');
+    background: url("../images/shot_from_cn_tower.jpg");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,4 +44,8 @@ h1 {
 
 .footer {
     display: none;
+}
+
+.icon-bar {
+    background-color: white !important;
 }
