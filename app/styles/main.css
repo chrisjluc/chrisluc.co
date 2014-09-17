@@ -328,10 +328,37 @@ a:active {
 }
 
 .footer {
-    padding: 15px;
-    background-color: #eee;
+    padding: 10px;
+    font-size: 8pt;
+    width: 100%;
+    position:fixed;
+    background:url(../images/white-fade.png) repeat;
+    bottom:0;
+    left:0;
+    opacity:0.95;
 }
 
 .copyright {
     text-align: center
+}
+
+.right {
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+}
+
+.referenceItem {
+    display: block;
+    right: 0;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.referenceItem > p {
+    font-style: italic;
+    font-size: 12pt;
 }

@@ -11,6 +11,8 @@ angular.module('website1App', [])
         templateUrl: 'views/projects.html'
       .when '/resume',
         templateUrl: 'views/resume.html'
+      .when '/references',
+        templateUrl: 'views/references.html'
       .otherwise
         redirectTo: '/'
     $locationProvider.html5Mode(false).hashPrefix('!');
