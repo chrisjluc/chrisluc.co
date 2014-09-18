@@ -460,7 +460,7 @@ FileETag None
     ExpiresByType text/html                             "access plus 0 seconds"
 
   # JavaScript
-    ExpiresByType application/javascript                "access plus 1 year"
+    ExpiresByType application/javascript                "access plus 1 week"
 
   # Manifest files
     ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
@@ -541,3 +541,12 @@ FileETag None
 # <IfModule mod_headers.c>
 #    Header set Connection Keep-Alive
 # </IfModule>
+
+RewriteEngine On
+
+Options +FollowSymLinks
+
+# Forward requests with _escaped_fragment_ parameter to SEO.js CDN
+RewriteCond %{QUERY_STRING}  _escaped_fragment_=  [NC]
+
+RewriteRule ^(.*)$ http://cdn.getseojs.com/v2/5ezjbgk68k9legtui77nrqv89/%{REQUEST_SCHEME}://%{HTTP_HOST}:%{SERVER_PORT}/$1 [P,QSA,L]
