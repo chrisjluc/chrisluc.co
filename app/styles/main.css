@@ -362,3 +362,7 @@ a:active {
     font-style: italic;
     font-size: 12pt;
 }
+
+.connect {
+    text-align: center;
+}
