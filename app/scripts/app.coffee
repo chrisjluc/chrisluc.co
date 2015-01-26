@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('website1App', [])
-  .config ($routeProvider,  $locationProvider) ->
+  .config ($routeProvider) ->
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'
@@ -15,4 +15,3 @@ angular.module('website1App', [])
         templateUrl: 'views/references.html'
       .otherwise
         redirectTo: '/'
-    $locationProvider.html5Mode(false).hashPrefix('!');
