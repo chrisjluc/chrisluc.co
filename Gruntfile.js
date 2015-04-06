@@ -30,6 +30,10 @@ module.exports = function (grunt) {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
         tasks: ['copy:styles', 'autoprefixer']
       },
+      recess: {
+        files: ['<%= yeoman.app %>/styles/{,*/}*.less'],
+        tasks: ['recess:dist']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -248,8 +252,9 @@ module.exports = function (grunt) {
     },
     concurrent: {
       server: [
+        'recess',
         'coffee:dist',
-        'copy:styles'
+        'copy:styles',
       ],
       test: [
         'coffee',
@@ -257,6 +262,7 @@ module.exports = function (grunt) {
       ],
       dist: [
         'coffee',
+        'recess',
         'copy:styles',
         'imagemin',
         'svgmin',
@@ -292,7 +298,21 @@ module.exports = function (grunt) {
           ]
         }
       }
-    }
+    },
+    recess: {
+        options: {
+            compile: true
+        },
+        dist: {
+            files: [{
+                expand: true,
+                cwd: '<%= yeoman.app %>/styles',
+                src: '{,*/}*.less',
+                dest: '.tmp/styles/',
+                ext: '.css'
+                }]
+            }
+        }
   });
 
   grunt.registerTask('server', function (target) {
@@ -329,7 +349,8 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'rev',
-    'usemin'
+    'usemin',
+    'recess',
   ]);
 
   grunt.registerTask('default', [

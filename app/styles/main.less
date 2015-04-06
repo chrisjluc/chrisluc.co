@@ -57,14 +57,11 @@ body {
 .navbar-brand {
     color: #5347FC !important;
     padding: 25px 30px;
-}
-
-.navbar-brand {
     -webkit-transition: all .3s;
-    transition: all .3s;  
+    transition: all .3s;
 }
 
-.page-scroll>a {
+.page-scroll > a {
     -webkit-transition: all .3s;
     transition: all .3s;
 }
@@ -105,16 +102,13 @@ body {
     transition: opacity 0.2s ease-out, visibility 0s 0.2s;
 }
 
-.navbar a:focus {
-    outline: 0;
-}
-
-.navbar .navbar-nav {
-    letter-spacing: 1px;
-}
-
-.navbar .navbar-nav li a:focus {
-    outline: 0;
+.navbar {
+    > a:focus {
+        outline: 0;
+    }
+    .navbar-nav {
+        letter-spacing: 1px;
+    }
 }
 
 .navbar-default,
@@ -140,73 +134,64 @@ body {
     position: relative;
 }
 
-.aboutItem {
+.item {
     display: block;
     right: 0;
     position: relative;
     margin-bottom: 20px;
+}
+
+.aboutItem {
+    .item;
     height: 100%;
 }
 
 .projectItem {
-    display: block;
-    right: 0;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 20px;
     background-color: #eee;
+    .description {
+        text-align: left;
+    }
+    div {
+        margin-top: 20px;
+        text-align: center;
+    }
+    h4 {
+        margin-bottom: 10px;
+    }
+    .item;
+    img {
+        height: 180px;
+        &:hover {
+            opacity: 1;
+        }
+        margin: 10px;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        transition: all .2s;
+        opacity: 0.85;
+    }
+    margin: 0 auto;
+    p {
+        margin: 10px 0;
+    }
     padding: 20px;
 }
 
-.projectItem div {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.projectItem .description {
-    text-align: left;
-}
-
-a:link {
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:active {
-    text-decoration: none;
-}
-
-.projectItem img {
-    height: 180px;
-    margin: 10px;
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    transition: all .2s;
-    opacity: 0.85;
-}
-
-.projectItem img:hover{
-    opacity: 1;
-}
 
 .tdlImages img {
     height: 300px;
+    &:hover {
+        opacity: 1;
+    }
     margin: 10px;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     transition: all .2s;
     opacity: 0.85;
-}
-
-.tdlImages img:hover{
-    opacity: 1;
 }
 
 @media(min-width:768px) {
@@ -261,28 +246,18 @@ a:active {
 
 .interests {
     font-size: 12px;
-}
-
-.interests p {
-    margin-top: 10px;
-    line-height: 20px;
+    p {
+        margin-top: 10px;
+        line-height: 20px;
+    }
 }
 
 .technical {
     font-size: 12px;
     line-height: 20px;
-}
-
-.technical h4{
-    margin: 10px 0px;
-}
-
-.projectItem h4 {
-    margin-bottom: 10px;
-}
-
-.projectItem p {
-    margin: 10px 0;
+    h4 {
+        margin: 10px 0px;
+    }
 }
 
 #main-logo {
@@ -293,9 +268,14 @@ a:active {
     }
 
 .hero-unit {
+    border-radius: 6px;
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
     margin-top: -10px;
     line-height: 25px;
-    border-radius: 6px;
 }
 
 @media(min-width:1000px) {
@@ -314,17 +294,10 @@ a:active {
 .container-nav{
     min-width: 300px !important;
     display: table;
+    div {
+        display: inline;
+    }
     table-layout: fixed;
-}
-
-.container-nav div {
-    display: inline;
-}
-
-.hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
 }
 
 .footer {
@@ -356,11 +329,10 @@ a:active {
     margin-bottom: 20px;
     background-color: #eee;
     padding: 20px;
-}
-
-.referenceItem > p {
-    font-style: italic;
-    font-size: 12pt;
+    > p {
+        font-style: italic;
+        font-size: 12pt;
+    }
 }
 
 .connect {
