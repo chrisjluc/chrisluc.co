@@ -45,9 +45,10 @@
                     </div>
                     <div class="card-content">
                         <p>
-                        Provides a single channel for writing and reading reviews for those looking to discover and learn about new electronic products.
+                        Provides a single channel for writing and reading reviews
+                        for those looking to discover and learn about new electronic products.
                         View the
-                        <a href="http://github.com/aaronte/mine-node/" target="_blank">source code</a>
+                        <a href="http://github.com/aaronte/mine-node/" target="_blank">source code</a>.
                         </p>
                     </div>
                 </div>
@@ -93,7 +94,7 @@
                         <p>
                         Android app that changes your wallpaper on a specified time interval, based on images
                         from the Dribble API.
-                        See the
+                        View the
                         <a href="http://github.com/chrisjluc/Nibbble" target="_blank">
                             source code</a>.
                         </p>
@@ -106,12 +107,12 @@
 <script>
 $(function() {
     $(window).resize(function() {
-        if($(document).width() >= 752)
+        if($(document).width() >= 752) {
             HeightEqualizer($('.card'), '.card-content');
-        else
+        } else {
             $('.card').css('height', '');
+        }
     });
-
     if($(window).width() >= 752)
         HeightEqualizer($('.card'), '.card-content');
 });
