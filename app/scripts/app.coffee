@@ -10,7 +10,7 @@ angular.module('website1App', [])
       .when '/projects',
         templateUrl: 'views/projects.html'
       .when '/resume',
-        templateUrl: 'views/resume.html'
+        templateUrl: 'ChristopherLucResume.pdf'
       .when '/references',
         templateUrl: 'views/references.html'
       .otherwise
