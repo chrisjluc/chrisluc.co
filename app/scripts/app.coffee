@@ -11,7 +11,7 @@ angular.module('website1App', [])
         templateUrl: 'views/projects.html'
       .when '/resume',
         templateUrl: 'ChristopherLucResume.pdf'
-      .when '/references',
+      .when '/testimonials',
         templateUrl: 'views/references.html'
       .otherwise
         redirectTo: '/'
